@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.genstrok.app",
+    "sha256_cert_fingerprints": ["D7:F8:D5:31:90:F0:5A:95:C8:ED:83:4B:06:3B:27:28:81:18:0B:DD:87:CA:62:1B:65:30:61:5A:31:88:38:FF"]
+  }
+}]
