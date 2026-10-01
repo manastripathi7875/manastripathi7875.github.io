@@ -3,12 +3,15 @@
 <title>Genstrok — Email verified</title></head>
 <body style="font-family:sans-serif;text-align:center;padding:48px;background:#050914;color:#F5F7FF">
 <h2>✅ Email verify ho gaya hai!</h2>
-<p>Ab Genstrok app mein jao — tumhara account activate hai, aage continue karo.</p>
+<p>Neeche button dabao — Genstrok app khul jayegi aur tum andar pahunch jaoge.</p>
 <p><a id="open" href="#" style="display:inline-block;margin-top:16px;padding:14px 32px;background:#6C2BFF;color:#fff;border-radius:12px;text-decoration:none;font-weight:bold">Open Genstrok App</a></p>
+<p style="margin-top:24px;font-size:13px;opacity:.7">Button kaam na kare to Gmail mein ⋮ → "Open in Chrome" karke phir dabao.</p>
 <script>
-var suffix = window.location.search + window.location.hash;
-var target = 'genstrok://confirm' + suffix;
-document.getElementById('open').href = target;
-window.location.replace(target);
+var query = window.location.search;
+var full = query + window.location.hash;
+var schemeUrl = 'genstrok://confirm' + full;
+var intentUrl = 'intent://confirm' + query + '#Intent;scheme=genstrok;package=com.genstrok.app;end';
+document.getElementById('open').href = intentUrl;
+window.location.replace(schemeUrl);
 </script>
 </body></html>
